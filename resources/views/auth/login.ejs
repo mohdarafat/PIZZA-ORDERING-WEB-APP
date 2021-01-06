@@ -1,0 +1,33 @@
+
+<div class="container-fluid cont">
+  
+
+  <div class="login animate__animated animate__fadeInLeft" style="animation-duration: 2s;">
+    <form method="POST" action="/login">
+      
+      <% if(messages.error){ %>
+        <p class="text-danger"><i><b><%=messages.error %></i></b></p>
+        <% } %>
+      
+      <br />
+      <h3>Login Up!</h3>
+      <hr>
+      <br />
+
+      <p class="p">Email</p>
+      <input type="email" placeholder="email" name="email" />
+      <p class="p">Password</p>
+
+      <input type="password" placeholder="password" name="password"/>
+      <button
+        class=" btn"
+        style="margin-top: 30px; margin-left: 97px; width: 195px;"
+        type="submit"
+      >
+        Login</button
+      ><br /><br />
+      <a href="" class="n" style="margin-left: 130px;">Forgot password?</a>
+    </form>
+  </div>
+</div>
+</div>

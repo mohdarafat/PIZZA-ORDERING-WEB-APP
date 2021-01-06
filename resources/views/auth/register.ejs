@@ -1,0 +1,35 @@
+
+<div class="container-fluid cont" id="cont">
+<div>
+  <div class="login animate__animated animate__fadeInLeft" style="animation-duration: 2s;">
+    <form method="POST">
+      <br />
+      
+     <div class="mar">
+      <h3>Register Now!</h3>
+      <hr>
+      <p class="x">Login to access your account</p>
+      <br />
+
+      <% if(messages.error){ %>
+        <p class="text-danger"><i><b><%=messages.error %></i></b></p>
+        <% } %>
+      <p class="p">Username</p>
+      <input type="name" placeholder="name" name="name" value="<%=messages.name %>"/>
+      <p class="p">Email</p>
+      <input type="email" placeholder="email" name="email" value="<%=messages.email %>" />
+      <p class="p">Password</p>
+
+      <input type="password" placeholder="password" name="password" />
+      <button type="submit"
+        class=" btn"
+        style="margin-top: 30px; margin-left: 97px; width: 195px;"
+      >
+        Register</button
+      ><br /><br />
+      <a href="/login" class="n">Already have access?</a>
+    </form>
+  </div>
+  </div>
+
+</div>
